@@ -1,0 +1,42 @@
+.alert{
+    background-color: #EEFFE5;
+}
+body {
+    font-family: "Raleway", sans-serif;
+}
+.nav-link:hover{
+    color: #2E8756;
+}
+.nav-brand {
+    color: #2E8756;
+}
+
+.navbar-nav {
+    justify-content: end;
+}
+a {
+    text-decoration: none;
+}
+.blog {
+    border-style: none;
+}
+.overlap-card {
+    position: absolute;
+    bottom: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; 
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+  }
+.eathealthybannercard {
+
+    left: 0;
+    right: 0;
+}
+
