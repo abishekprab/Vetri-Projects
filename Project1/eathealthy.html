@@ -109,6 +109,22 @@
       color: #ffffff;
       font-weight: bold;
     }
+    .eathealthy-mobile1 {
+      margin-left: -5%;
+    }
+    .eathealthy-mobile2 {
+      margin-left: -15%;
+      background-color: white;
+    }
+    .eathealthy-weeklyrecipe1 {
+      margin-left: -5%;
+      background-color: white;
+      z-index: 1;
+    }
+    .eathealthy-weeklyrecipe2 {
+      margin-left: -15%;
+      z-index: n-1;
+    }
   </style>
 </head>
 
@@ -196,14 +212,14 @@
 
   <div class="container py-5">
     <div class="row mb-5 align-items-center">
-      <div class="col-md-6">
+      <div class="col-md-6 eathealthy-mobile1">
         <img src="images/mobile app-eat healthy.png" alt="App Image" class="img-fluid rounded">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 eathealthy-mobile2">
         <h2 class="fw-bold">Set Personal Goals for healthy eating</h2>
         <p>Get started with Start Simple with MyPlate! Meet healthy eating goals one at a time! Use the Start Simple
           with MyPlate app to pick simple daily food goals, see real-time progress, and earn badges along the way.</p>
-        <div class="d-flex ">
+        <div class="d-flex justify-content-center">
           <a href="#"><img src="images/andriod-eat healthy.png" alt="Google Play" style="height:30px;"></a>
           <a href="#"><img src="images/app store-eat healthy.png" alt="App Store" style="height:30px;"></a>
         </div>
@@ -211,14 +227,14 @@
     </div>
 
     <div class="row align-items-center">
-      <div class="col-md-6 order-md-2">
-        <img src="images/easy recipe-eat healthy.png" alt="Recipe Image" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6 order-md-1">
-        <h2 class="fw-bold">Find easy, low-cost recipes</h2>
+      <div class="col-md-6 eathealthy-weeklyrecipe1">
+               <h2 class="fw-bold">Find easy, low-cost recipes</h2>
         <p>View delicious recipes in our very own Weekly Updates! Ingredients and steps to be followed are given to use
           what you already have or browse by category to find something new. Follow the recipe and enjoy, and more!</p>
-        <a href="#" class="btn btn-success">VIEW WEEKLY RECIPE</a>
+        <a href="#" class="btn btn-success justify-content-center">VIEW WEEKLY RECIPE</a>
+      </div>
+      <div class="col-md-6 eathealthy-weeklyrecipe2">
+        <img src="images/easy recipe-eat healthy.png" alt="Recipe Image" class="img-fluid rounded">
       </div>
     </div>
   </div>
