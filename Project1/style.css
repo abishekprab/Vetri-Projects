@@ -12,7 +12,7 @@ body {
 }
 
 .navbar-nav {
-    justify-content: end;
+    justify-content: flex-end;
 }
 a {
     text-decoration: none;
@@ -257,4 +257,32 @@ a {
 .nutrition-table .sub-item {
     margin-left: 20px;
     font-size: 0.95rem;
+}
+quiz-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+.quiz-container {
+  text-align: center;
+}
+.quiz-input-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.quiz-btn-continue {
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-check:checked + .btn {
+  background-color: #198754; /* Bootstrap success color */
+  color: white;
+  border-color: #198754;
 }
