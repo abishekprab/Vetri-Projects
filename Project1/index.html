@@ -10,16 +10,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
-<body>
-  <!--navbar & Alert-->
-  <div class = "container-fluid">
-    <!--alert-->
-    <div class="container-fluid w-100 text-center">
-          <div class="alert" role="alert">
-              <span class = "d-block p-1">ONE STOP FOR NUTRITION PLAN AND PERSONLAIZED DIET CHART!!!</span>
-          </div>
+<body>    
+  <div class="container-fluid justify-content-center">
+    <div class="alert" role="alert">
+      <span class = "">ONE STOP FOR NUTRITION PLAN AND PERSONLAIZED DIET CHART!!!</span>
     </div>
-
+  </div>
+  <!--navbar & Alert-->
+  <div class = "d-flex w-100">
     <div class="container-fluid">
       <!--navbar-->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,7 +36,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="resources.html">Resources</a>
                 </li>
-                <li class="btn btn-outline-success">
+                <li class="btn btn-outline-success" data-bs-toggle= "modal" data-bs-target="#exampleModal">
                   <a href = "">REGISTER</a>
                 </li>
               </ul>
@@ -48,52 +46,179 @@
     </div>
   </div>
 
-  <!--carousel-->
-<div class = "container-fluid">
-  <div class="container position-relative">
-    <!-- Banner Image -->
-    <img src="images/hero-home screen.png" class="img-fluid w-100" alt="Banner">
-  
-    <!-- Overlapping Card -->
-    <div class="card overlap-card mx-auto mb-2">
-      <div class="card-body">
-        <h5 class="card-title">Overlapping Card</h5>
-        <p class="card-text">This card is 80% on the banner and 20% below.</p>
+  <!-- register Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register to continue <hr> EAT HEALTHY+</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="Name" placeholder="Name">
+        </div>
+        <div class="mb-3">
+          <label for="EamilAddress" class="form-label">Eamil Address</label>
+          <input type="text" class="form-control" id="EamilID" placeholder="EamilAddress">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-outline-success" data-bs-dismiss="modal">next</button>
       </div>
     </div>
   </div>
 </div>
+
+  <!--carousel-->
+<div class = "container-fluid m-0">
+  <div class="container-fluid position-relative">
+    <!-- Banner Image -->
+    <img src="images/hero-home screen.png" class="img-fluid w-100" alt="Banner">
   
-  <!--our feed for you & its cards-->
-  <div class = "container"></div>
- 
+    <!-- Overlapping Card -->
+    <div class="card overlap-card mx-auto mb-5 w-75">
+      <div class="text-center">
+        <h4 class="highlight-text">EAT HEALTHY +</h4>
+        <h2 class="my-3">Your essential guide to healthy eating</h2>
+        <p class="fs-5">
+          <i class="bi bi-quote"></i> Our vision is for a future where everyone has a healthy, sustainable diet. 
+          Ultimately, we want to change the food environment and motivate people to adopt healthy, sustainable diets - for life.
+        </p>
+        <button class="btn btn-outline-dark more-btn">MORE ABOUT US</button>
+      </div>
+      <div class="row text-center icon-section mt-5">
+        <div class="col-6 col-md-2 offset-md-1 icon-item">
+          <img src="images/meal icon-home scrn.png">
+          <div>Perfect Meal Plan</div>
+        </div>
+        <div class="col-6 col-md-2 icon-item">
+          <img src="images/nutri plan icon-home.png">
+          <div>Nutrition Plan</div>
+        </div>
+        <div class="col-6 col-md-2 icon-item">
+          <img src="images/sample brochure-home.png">
+          <div>Free Sample Brochures</div>
+        </div>
+        <div class="col-6 col-md-2 icon-item">
+          <img src="images/diet chat icon-home.png">
+          <div>Personalized Diet Chart</div>
+        </div>
+        <div class="col-6 col-md-2 icon-item">
+          <img src="images/30 day icon-home.png">
+          <div>30-days challenge</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--Ourfeed for you-->
+  <div class="container py-5 mt-5">
+    <h2 class="text-center mb-5">OUR FEED FOR YOU</h2>
+    
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="feed-card">
+          <img src="images/nutritious families-home screen.png" alt="Family with trees">
+          <button class="feed-button justify-content-center">Nutrition Information for Families</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="feed-card">
+              <img src="images/recipe-home screen.png" alt="Recipe of the week">
+              <button class="feed-button justify-content-center"><a href="weeklyrecipe.html"></a>Recipe of the week</button>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="feed-card">
+              <img src="images/meal plan pdf-home screen.png" alt="Meal plan">
+              <button class="feed-button justify-content-center"><a href="chalenge.html"></a>Get your MEAL PLAN PDF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+   
   <!--featured in-->
-  <div class = "container-fluid">
-    <p class = "text-center m-5 p-5">featured in</p>
-    <div class = "row ">
-      <div class = "col-3">1</div>
-      <div class = "col-3">2</div>
-      <div class = "col-3">3</div>
-      <div class = "col-3">4</div>
+  <div class="container featured-section">
+    <h2 class="mb-5">FEATURED IN</h2>
+    <div class="row justify-content-center featured-logos">
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="images/herbal logo.png" alt="Herbalife">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="images/fitbit logo.png" alt="Fitbit">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="images/healthy chew logo.png" alt="Healthy Chew">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="images/nutreco logo.png" alt="Nutreco">
+        </div>
     </div>
-    <div class = "row">
-      <div class = "col-4">1</div>
-      <div class = "col-4">2</div>
-      <div class = "col-4">3</div>
+    <div class="row justify-content-center featured-logos mt-4">
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="images/nutri growth logo.png" alt="Nutri Growth">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="images/atrium logo.png" alt="Atrium Health">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="images/care plus logo.png" alt="CarePlus">
+        </div>
     </div>
-  </div>
+</div>
   <!--challenge-->
-  <div class = "container">
+  <div class="container">
+    <div class="row challenge-card">
 
-  </div>
-  <!--testimonial-->
-  <div class = "container">
+      <div class="col-md-6 p-5 d-flex flex-column justify-content-center W-100">
+        <h4 class="fw-bold">JOIN THE 30-DAY CHALLENGE</h4>
+        <p class="mt-3">Our 30-Day Challenge is a fun and effective way to kick-start your journey towards better
+          health. This program is designed to help you build lasting habits and see noticeable improvements in just one
+          month!</p>
+        <a href="chalenge.html" class="btn btn-download mt-4 px-4 py-2">DOWNLOAD THE CHALLENGE PDF</a>
+      </div>
 
+    </div>
   </div>
-  <!--testimonial cards-->
-  <div class= "container">
-
+  <!--testimonial--> 
+  <h2 class="d-flex fw-bold justify-content-center">TESTIMONIALS</h2>
+  <p class ="d-flex justify-content-center">Hear from our valuable customers who have transformed their health with <strong>EAT HEALTHY +</strong></p>
+  <div class="d-flex py-5 testimonial-background w-100">
+   
+  
+    <div class="d-flex w-100 row mt-5" >
+      <div class="col-md-4 mb-4">
+        <div class="card testimonial-card p-3">
+          <img src="images/review 1.png" alt="Wilson O" class="testimonial-img mb-3">
+          <p class="testimonial-text">"I've learned so much about nutrition from this website! It has changed my perspective on eating and helped me make healthier choices. I feel more energetic and my digestive issues have improved."</p>
+          <p class="testimonial-name">WILSON O</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card testimonial-card p-3">
+          <img src="images/review 2.png" alt="Maria Nelson" class="testimonial-img mb-3">
+          <p class="testimonial-text">"Before, I was lost in the world of food, feeling confused and overwhelmed. After using this website, I feel empowered & created a sustainable healthy lifestyle that I love."</p>
+          <p class="testimonial-name">MARIA NELSON</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card testimonial-card p-3">
+          <img src="images/review 3.png" alt="Jerald John" class="testimonial-img mb-3">
+          <p class="testimonial-text">"I've learned so much about nutrition from this website! It has changed my perspective on eating and helped me make healthier choices. I feel more energetic and my digestive issues have improved."</p>
+          <p class="testimonial-name">JERALD JOHN</p>
+        </div>
+      </div>
+    </div>
   </div>
+  
   <!--footer-->
   <footer>
     <div class= "container-fulid">
