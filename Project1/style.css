@@ -1,3 +1,9 @@
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
 .alert{
     background-color: #EEFFE5;
 }
@@ -128,9 +134,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: black;
     text-decoration: none;
     font-size: 18px;
+    padding-top: 60px;
   }
 
   .fruits {
@@ -165,6 +173,8 @@ a {
     font-family: Arial, sans-serif;
     color: black;
     text-decoration: none;
+    margin-top: -8%;
+    border: 10px solid #ffff; 
   }
 
   .grid-container {
