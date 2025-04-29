@@ -20,9 +20,6 @@ body {
 .navbar-nav {
     justify-content: flex-end;
 }
-a {
-    text-decoration: none;
-}
 .blog {
     border-style: none;
 }
@@ -296,4 +293,9 @@ quiz-body {
   background-color: #198754; /* Bootstrap success color */
   color: white;
   border-color: #198754;
+}
+footer {
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
